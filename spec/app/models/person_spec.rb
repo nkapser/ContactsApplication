@@ -1,5 +1,4 @@
 require File.join(File.dirname(__FILE__), "/../../spec_helper.rb")
-require 'person'
 
 describe Person do
   before(:each) do
@@ -8,10 +7,7 @@ describe Person do
 
   it "should test father son relation ship" do
     father = ModelFactory.create_person(:first_name => "father")
-    son = ModelFactory.create_person(:first_name => "son")
-
-    son.father = father
-    son.save!
+    son = ModelFactory.create_person(:first_name => "son", :father => father)
 
     son.father.should == father
   end
@@ -44,6 +40,8 @@ describe Person do
     person = ModelFactory.create_person(:first_name => "person", :contact_detail => contact_detail)
     person.contact_detail.area.should == "Pune"
   end
+
+  it "should get the businesses of the person"
 
 
 end

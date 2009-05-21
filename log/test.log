@@ -914,3 +914,108 @@ Migrating to CreatePhoneNumbers (20090520194437)
   [4;35;1mPerson Create (0.2ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, 7, '2009-05-21 18:28:35', NULL, '2009-05-21 18:28:35', 'M', 'last', NULL, NULL, 'person', 'middle', 'B.E')[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
   [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'father', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.1ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'son', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Update (0.2ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-21 18:52:54', `father_id` = 146 WHERE `id` = 147[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (90.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'father', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'son1', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'son2', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Update (0.4ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-21 18:52:54', `father_id` = 148 WHERE `id` = 149[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Update (0.3ms)[0m   [0;1mUPDATE `people` SET `updated_at` = '2009-05-21 18:52:54', `father_id` = 148 WHERE `id` = 150[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.`father_id` = 148) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'husband', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'F', 'last', NULL, NULL, 'wife', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mMarriage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mMarriage Create (0.3ms)[0m   [0mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(152, 151)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 152) AND ((`people`.`sex` = 'M'))) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `contact_details`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mContactDetail Create (0.3ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('city', 9999, 'Pune', NULL, 'street', 'state')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, 8, '2009-05-21 18:52:54', NULL, '2009-05-21 18:52:54', 'M', 'last', NULL, NULL, 'person', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'father', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.1ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, 154, 'son', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.2ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'father', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.2ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'son1', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.1ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'son2', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Update (0.2ms)[0m   [0;1mUPDATE `people` SET `updated_at` = '2009-05-21 18:59:04', `father_id` = 156 WHERE `id` = 157[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Update (0.2ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-21 18:59:04', `father_id` = 156 WHERE `id` = 158[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.`father_id` = 156) [0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mPerson Create (0.2ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'husband', 'middle', 'B.E')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.1ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'F', 'last', NULL, NULL, 'wife', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mMarriage Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mMarriage Create (0.2ms)[0m   [0;1mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(160, 159)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 160) AND ((`people`.`sex` = 'M'))) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mContactDetail Create (0.2ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('city', 9999, 'Pune', NULL, 'street', 'state')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mPerson Create (0.2ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, 9, '2009-05-21 18:59:04', NULL, '2009-05-21 18:59:04', 'M', 'last', NULL, NULL, 'person', 'middle', 'B.E')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
