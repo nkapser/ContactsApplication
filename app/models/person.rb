@@ -27,4 +27,16 @@ class Person < ActiveRecord::Base
 
   has_many :businesses
 
+
+  def children
+    Person.find(:all,
+           :conditions => {:father_id => self})
+  end
+
 end
+
+
+
+
+
+
