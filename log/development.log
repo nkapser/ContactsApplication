@@ -1,0 +1,1829 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Person (20090518190903)
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE `persons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090518190903')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `persons`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `persons`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `persons`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPerson Columns (0.0ms)[0m   [0mMysql::Error: Table 'ContactsApplication_development.people' doesn't exist: SHOW FIELDS FROM `people`[0m
+  [4;36;1mPerson Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'ContactsApplication_development.people' doesn't exist: SHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Columns (0.0ms)[0m   [0mMysql::Error: Table 'ContactsApplication_development.people' doesn't exist: SHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'ContactsApplication_development.people' doesn't exist: SHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Person (20090518190903)
+  [4;35;1mSQL (50.8ms)[0m   [0mCREATE TABLE `persons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090518190903')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `persons`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `persons`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `persons`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `ContactsApplication_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `ContactsApplication_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCREATE TABLE `persons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090518190903')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to Person (20090518190903)
+  [4;35;1mSQL (49.5ms)[0m   [0mCREATE TABLE `persons` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090518190903')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `persons`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `persons`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `persons`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'ContactsApplication_development.people' doesn't exist: SHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (51.7ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+Migrating to CreateParents (20090519183259)
+  [4;36;1mSQL (9.2ms)[0m   [0;1mCREATE TABLE `parents` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `father_id` int(11), `mother_id` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090519183259')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `parents`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `parents`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `parents`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (50.3ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (66.5ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:02:22', NULL, '2009-05-19 19:02:22', NULL, NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:03:33', NULL, '2009-05-19 19:03:33', NULL, NULL, NULL, NULL, NULL, 'naresh', NULL, NULL)[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:04:01', NULL, '2009-05-19 19:04:01', NULL, NULL, NULL, NULL, NULL, 'dhakad', NULL, NULL)[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (1.0ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Update (0.5ms)[0m   [0;1mUPDATE `people` SET `updated_at` = '2009-05-19 19:04:06', `father_id` = 1 WHERE `id` = 3[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (48.3ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.6ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `updated_at`, `sex`, `last_name`, `age`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:06:20', '2009-05-19 19:06:20', NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (29.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'people.father_id' in 'where clause': SELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `updated_at`, `sex`, `last_name`, `age`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:06:56', '2009-05-19 19:06:56', NULL, NULL, NULL, 'dhakad', NULL, NULL)[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'people.father_id' in 'where clause': SELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (54.3ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:07:50', NULL, '2009-05-19 19:07:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:08:03', NULL, '2009-05-19 19:08:03', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.father_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (0.4ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-19 19:08:10', `father_id` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (53.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (84.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:18:00', NULL, '2009-05-19 19:18:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:18:16', NULL, '2009-05-19 19:18:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.7ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:19:08', NULL, '2009-05-19 19:19:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:19:52', NULL, '2009-05-19 19:19:52', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:19:58', NULL, '2009-05-19 19:19:58', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (95.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM `people` WHERE (`people`.spouse_id = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (0.4ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-19 19:19:59', `spouse_id` = 4 WHERE `id` = 5[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (49.0ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:33:03', NULL, '2009-05-19 19:33:03', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.8ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:33:10', NULL, '2009-05-19 19:33:10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mpeople_people Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'ContactsApplication_development.people_people' doesn't exist: SHOW FIELDS FROM `people_people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+Migrating to CreateMarriages (20090519194034)
+  [4;36;1mSQL (7.3ms)[0m   [0;1mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `marriages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `marriages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:56:18', NULL, '2009-05-19 19:56:18', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (36.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:56:27', NULL, '2009-05-19 19:56:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:57:27', NULL, '2009-05-19 19:57:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:57:30', NULL, '2009-05-19 19:57:30', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mPerson Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:58:28', NULL, '2009-05-19 19:58:28', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (20.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 19:58:30', NULL, '2009-05-19 19:58:30', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (27.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:07:38', NULL, '2009-05-19 20:07:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:07:41', NULL, '2009-05-19 20:07:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:08:21', NULL, '2009-05-19 20:08:21', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (11.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:08:23', NULL, '2009-05-19 20:08:23', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:10:36', NULL, '2009-05-19 20:10:36', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:10:38', NULL, '2009-05-19 20:10:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:10:55', NULL, '2009-05-19 20:10:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:10:57', NULL, '2009-05-19 20:10:57', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (0.4ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.spouse_id = 7) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (46.4ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:16:39', NULL, '2009-05-19 20:16:39', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:16:42', NULL, '2009-05-19 20:16:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (0.4ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.person_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMarriage Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:18:48', NULL, '2009-05-19 20:18:48', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMarriage Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMarriage Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMarriage Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mMarriage Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:19:15', NULL, '2009-05-19 20:19:15', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.2ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:19:30', NULL, '2009-05-19 20:19:30', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mMarriage Load (0.8ms)[0m   [0;1mSELECT * FROM `marriages` WHERE (`marriages`.person_id = 5) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mMarriage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (55.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (7.9ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:30:27', NULL, '2009-05-19 20:30:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:30:50', NULL, '2009-05-19 20:30:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (101.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (0.4ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.person_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.6ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:32:08', NULL, '2009-05-19 20:32:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-19 20:32:10', NULL, '2009-05-19 20:32:10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (0.6ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.person_id = 3) [0m
+  [4;36;1mMarriage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMarriage Create (0.4ms)[0m   [0;1mINSERT INTO `marriages` (`spouse_id`, `person_id`) VALUES(NULL, 3)[0m
+  [4;35;1mSQL (35.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (45.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (118.2ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:32:12', NULL, '2009-05-20 16:32:12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (19.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:32:40', NULL, '2009-05-20 16:32:40', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:32:44', NULL, '2009-05-20 16:32:44', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (48.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:33:29', NULL, '2009-05-20 16:33:29', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (9.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:33:31', NULL, '2009-05-20 16:33:31', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:37:38', NULL, '2009-05-20 16:37:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:37:41', NULL, '2009-05-20 16:37:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:38:08', NULL, '2009-05-20 16:38:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:40:41', NULL, '2009-05-20 16:40:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (32.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mmarriages Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (112.8ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 13 ) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (1.1ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:40:50', NULL, '2009-05-20 16:40:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (14, 14, 13)[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 14 ) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (20.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (4.6ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:44:06', NULL, '2009-05-20 16:44:06', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:44:10', NULL, '2009-05-20 16:44:10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mmarriages Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (1, 2, 2)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 1 ) [0m
+  [4;36;1mPerson Load (0.7ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (51.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:50:58', NULL, '2009-05-20 16:50:58', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:58:37', NULL, '2009-05-20 16:58:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (90.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `spouse_id` int(11), `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.7ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:58:50', NULL, '2009-05-20 16:58:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 16:58:54', NULL, '2009-05-20 16:58:54', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mmarriages Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;36;1mSQL (9.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.6ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 2 ) [0m
+  [4;35;1mmarriages Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:00:20', NULL, '2009-05-20 17:00:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (15.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `spouse_id`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:00:22', NULL, '2009-05-20 17:00:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mmarriages Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (4, 4, 3)[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 3 ) [0m
+  [4;35;1mmarriages Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 4 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (72.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:01:51', NULL, '2009-05-20 17:01:51', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:01:54', NULL, '2009-05-20 17:01:54', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mmarriages Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.8ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 2 ) [0m
+  [4;36;1mmarriages Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (49.8ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:03:36', NULL, '2009-05-20 17:03:36', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:03:38', NULL, '2009-05-20 17:03:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mmarriages Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mmarriages Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (50.1ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (7.5ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:05:07', NULL, '2009-05-20 17:05:07', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:05:10', NULL, '2009-05-20 17:05:10', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mmarriages Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (1, 2, 2)[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 1 ) [0m
+  [4;36;1mmarriages Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (73.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:13:17', NULL, '2009-05-20 17:13:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (10.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.7ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:13:20', NULL, '2009-05-20 17:13:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mmarriages Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.6ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;36;1mmarriages Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mPerson Load (0.6ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (50.2ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:19:37', NULL, '2009-05-20 17:19:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (87.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:20:04', NULL, '2009-05-20 17:20:04', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (19.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mmarriages Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (6.4ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 2 ) [0m
+  [4;35;1mmarriages Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:21:57', NULL, '2009-05-20 17:21:57', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (24.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:22:00', NULL, '2009-05-20 17:22:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mmarriages Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (3, 4, 4)[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 3 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mmarriages Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 4 ) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 3 ) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (83.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:28:11', NULL, '2009-05-20 17:28:11', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:28:16', NULL, '2009-05-20 17:28:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `id`, `person_id`) VALUES (2, 2, 1)[0m
+  [4;36;1mSQL (9.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE (`marriages`.person_id = 1 ) [0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE (`marriages`.spouse_id = 2 ) [0m
+  [4;35;1mMarriage Load (0.4ms)[0m   [0mSELECT * FROM `marriages` LIMIT 1[0m
+  [4;36;1mMarriage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (47.5ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:43:57', NULL, '2009-05-20 17:43:57', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.2ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:44:04', NULL, '2009-05-20 17:44:04', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:44:25', NULL, '2009-05-20 17:44:25', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:44:27', NULL, '2009-05-20 17:44:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.spouse_id WHERE ((`marriages`.person_id = 3)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMarriage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mMarriage Create (0.3ms)[0m   [0mINSERT INTO `marriages` (`spouse_id`, `person_id`) VALUES(4, 3)[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.person_id WHERE ((`marriages`.spouse_id = 4)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `person_id` int(11), `spouse_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:59:30', NULL, '2009-05-20 17:59:30', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 17:59:34', NULL, '2009-05-20 17:59:34', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (0.4ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.spouse_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:01:16', NULL, '2009-05-20 18:01:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:01:19', NULL, '2009-05-20 18:01:19', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:02:06', NULL, '2009-05-20 18:02:06', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (76.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:02:10', NULL, '2009-05-20 18:02:10', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mMarriage Load (1.0ms)[0m   [0mSELECT * FROM `marriages` WHERE (`marriages`.spouse_id = 5) [0m
+  [4;36;1mMarriage Load (0.5ms)[0m   [0;1mSELECT * FROM `marriages` WHERE (`marriages`.person_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:19:53', NULL, '2009-05-20 18:19:53', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:19:56', NULL, '2009-05-20 18:19:56', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.8ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:20:36', NULL, '2009-05-20 18:20:36', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:20:38', NULL, '2009-05-20 18:20:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (82.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:22:17', NULL, '2009-05-20 18:22:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:22:18', NULL, '2009-05-20 18:22:18', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMarriage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mMarriage Create (0.5ms)[0m   [0;1mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(2, NULL)[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.husband_id = 1)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:24:13', NULL, '2009-05-20 18:24:13', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (17.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.6ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:24:15', NULL, '2009-05-20 18:24:15', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMarriage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mMarriage Create (0.3ms)[0m   [0;1mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(3, 4)[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 3)) [0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.wife_id = 4)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (52.3ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:26:55', NULL, '2009-05-20 18:26:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (11.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:26:59', NULL, '2009-05-20 18:26:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMarriage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mMarriage Create (0.4ms)[0m   [0mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(1, 2)[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'marriages.sex' in 'where clause': SELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 1) AND ((`marriages`.`sex` = 'M'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:27:41', NULL, '2009-05-20 18:27:41', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (9.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:27:48', NULL, '2009-05-20 18:27:48', 'F', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMarriage Create (0.3ms)[0m   [0mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(3, 4)[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'marriages.sex' in 'where clause': SELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 3) AND ((`marriages`.`sex` = 'M'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:28:59', NULL, '2009-05-20 18:28:59', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (10.6ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (50.6ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (29.1ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (15.0ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:29:09', NULL, '2009-05-20 18:29:09', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:29:12', NULL, '2009-05-20 18:29:12', 'F', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMarriage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mMarriage Create (0.4ms)[0m   [0;1mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(1, 2)[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (78.4ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 1) AND ((`people`.`sex` = 'F'))) [0m
+  [4;35;1mPerson Load (0.7ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.wife_id = 2) AND ((`people`.`sex` = 'M'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:30:33', NULL, '2009-05-20 18:30:33', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (15.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:30:39', NULL, '2009-05-20 18:30:39', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mMarriage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mMarriage Create (0.3ms)[0m   [0mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(3, 4)[0m
+  [4;36;1mSQL (12.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 3) AND ((`people`.`sex` = 'M'))) [0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.wife_id = 4) AND ((`people`.`sex` = 'F'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (47.8ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:31:56', NULL, '2009-05-20 18:31:56', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:31:58', NULL, '2009-05-20 18:31:58', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMarriage Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `marriages`[0m
+  [4;36;1mMarriage Create (0.5ms)[0m   [0;1mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(1, 2)[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (8.6ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 1) AND ((`people`.`sex` = 'M') AND (`people`.`sex` = 'M'))) [0m
+  [4;35;1mPerson Load (0.6ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.wife_id = 2) AND ((`people`.`sex` = 'F') AND (`people`.`sex` = 'F'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.6ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:33:03', NULL, '2009-05-20 18:33:03', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 18:33:05', NULL, '2009-05-20 18:33:05', 'M', NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMarriage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mMarriage Create (0.3ms)[0m   [0mINSERT INTO `marriages` (`husband_id`, `wife_id`) VALUES(3, 4)[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.wife_id WHERE ((`marriages`.husband_id = 3) AND ((`people`.`sex` = 'M'))) [0m
+  [4;36;1mPerson Load (0.7ms)[0m   [0;1mSELECT `people`.* FROM `people` INNER JOIN `marriages` ON `people`.id = `marriages`.husband_id WHERE ((`marriages`.wife_id = 4) AND ((`people`.`sex` = 'F'))) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (48.9ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (50.4ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (6.4ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (48.0ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `contact_detail_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:09:04', NULL, '2009-05-20 19:09:04', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Create (0.4ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `steet_address`, `state`) VALUES('Pune', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'contact_details.person_id' in 'where clause': SELECT * FROM `contact_details` WHERE (`contact_details`.person_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (56.4ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (10.2ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `person_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `contact_detail_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 19:11:36', NULL, '2009-05-20 19:11:36', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mContactDetail Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `contact_details`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Create (0.4ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `person_id`, `steet_address`, `state`) VALUES('Pune', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mContactDetail Load (0.4ms)[0m   [0;1mSELECT * FROM `contact_details` WHERE (`contact_details`.person_id = 1) LIMIT 1[0m
+  [4;35;1mContactDetail Load (0.2ms)[0m   [0mSELECT * FROM `contact_details` WHERE (`contact_details`.person_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Update (75.1ms)[0m   [0mUPDATE `contact_details` SET `person_id` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Load (0.4ms)[0m   [0mSELECT * FROM `contact_details` LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (52.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `person_id` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, '2009-05-20 19:13:12', NULL, '2009-05-20 19:13:12', NULL, NULL, NULL, NULL, 'dhakad', NULL, NULL)[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Load (0.5ms)[0m   [0mSELECT * FROM `contact_details` WHERE (`contact_details`.person_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (45.7ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (5.3ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.3ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:29:04', NULL, '2009-05-20 19:29:04', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (11.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mContactDetail Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `contact_details`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Create (0.4ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('Pune', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:29:34', NULL, '2009-05-20 19:29:34', NULL, NULL, NULL, NULL, 'dhakad', NULL, NULL)[0m
+  [4;36;1mSQL (11.9ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (48.7ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (5.5ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:34:41', NULL, '2009-05-20 19:34:41', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (16.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mBusiness Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `businesses`[0m
+  [4;36;1mContactDetail Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `contact_details`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Create (0.3ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (35.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBusiness Create (0.3ms)[0m   [0mINSERT INTO `businesses` (`name`, `description`) VALUES('abc', NULL)[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Load (0.6ms)[0m   [0mSELECT * FROM `contact_details` WHERE (`contact_details`.business_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Update (0.3ms)[0m   [0mUPDATE `contact_details` SET `business_id` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (5.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mBusiness Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'businesses.person_id' in 'where clause': SELECT * FROM `businesses` WHERE (`businesses`.person_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (46.1ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (8.0ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (6.7ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `person_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPerson Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `people`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:38:11', NULL, '2009-05-20 19:38:11', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mBusiness Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBusiness Create (0.3ms)[0m   [0;1mINSERT INTO `businesses` (`name`, `person_id`, `description`) VALUES('abc', NULL, NULL)[0m
+  [4;35;1mSQL (25.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mContactDetail Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `contact_details`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Create (0.4ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mContactDetail Load (0.4ms)[0m   [0;1mSELECT * FROM `contact_details` WHERE (`contact_details`.business_id = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Update (0.3ms)[0m   [0;1mUPDATE `contact_details` SET `business_id` = 1 WHERE `id` = 1[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBusiness Update (0.4ms)[0m   [0mUPDATE `businesses` SET `person_id` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (83.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mBusiness Load (0.5ms)[0m   [0mSELECT * FROM `businesses` WHERE (`businesses`.person_id = 1) [0m
+  [4;36;1mContactDetail Load (0.5ms)[0m   [0;1mSELECT * FROM `contact_details` WHERE (`contact_details`.business_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (51.9ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (4.6ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `person_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+Migrating to CreatePhoneNumbers (20090520194437)
+  [4;35;1mSQL (18.7ms)[0m   [0mCREATE TABLE `phone_numbers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `contact_detail_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520194437')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `phone_numbers`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.8ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:50:34', NULL, '2009-05-20 19:50:34', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Create (0.3ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (109.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPhoneNumber Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `phone_numbers`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPhoneNumber Create (0.4ms)[0m   [0mINSERT INTO `phone_numbers` (`number`, `contact_detail_id`) VALUES(123, NULL)[0m
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPhoneNumber Update (0.3ms)[0m   [0;1mUPDATE `phone_numbers` SET `contact_detail_id` = 1 WHERE `id` = 1[0m
+  [4;35;1mSQL (11.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPhoneNumber Load (0.2ms)[0m   [0;1mSELECT * FROM `phone_numbers` WHERE (`phone_numbers`.contact_detail_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPhoneNumber Create (0.3ms)[0m   [0;1mINSERT INTO `phone_numbers` (`number`, `contact_detail_id`) VALUES(456, NULL)[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPhoneNumber Update (0.4ms)[0m   [0mUPDATE `phone_numbers` SET `contact_detail_id` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPhoneNumber Load (0.4ms)[0m   [0mSELECT * FROM `phone_numbers` LIMIT 1[0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.contact_detail_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPerson Create (0.4ms)[0m   [0;1mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:54:09', NULL, '2009-05-20 19:54:09', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;35;1mSQL (17.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Update (0.7ms)[0m   [0mUPDATE `people` SET `updated_at` = '2009-05-20 19:54:34', `contact_detail_id` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Load (0.5ms)[0m   [0mSELECT * FROM `contact_details` WHERE (`contact_details`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:54:44', NULL, '2009-05-20 19:54:44', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mContactDetail Create (0.4ms)[0m   [0;1mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT * FROM `people` WHERE (`people`.contact_detail_id = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (51.0ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (16.9ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `person_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+Migrating to CreatePhoneNumbers (20090520194437)
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `phone_numbers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `contact_detail_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520194437')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `phone_numbers`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:55:58', NULL, '2009-05-20 19:55:58', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Create (0.4ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:57:28', NULL, '2009-05-20 19:57:28', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090519182853)
+  [4;35;1mSQL (66.8ms)[0m   [0mCREATE TABLE `people` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `father_id` int(11), `mother_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `middle_name` varchar(255), `education` varchar(255), `sex` varchar(255), `dob` date, `age` int(11), `contact_detail_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519182853')[0m
+Migrating to CreateMarriages (20090519194034)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `marriages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `husband_id` int(11), `wife_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090519194034')[0m
+Migrating to CreateContactDetails (20090520184024)
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE `contact_details` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `steet_address` varchar(255), `area` varchar(255), `city` varchar(255), `state` varchar(255), `pincode` int(11), `business_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184024')[0m
+Migrating to CreateBusinesses (20090520184041)
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE `businesses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `person_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520184041')[0m
+Migrating to CreatePhoneNumbers (20090520194437)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `phone_numbers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `contact_detail_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520194437')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `businesses`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `businesses`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `businesses`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `contact_details`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `contact_details`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `marriages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `marriages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `marriages`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `people`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `people`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `phone_numbers`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `phone_numbers`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.4ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:57:37', NULL, '2009-05-20 19:57:37', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Create (0.4ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPerson Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `people`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPerson Create (0.3ms)[0m   [0mINSERT INTO `people` (`dob`, `contact_detail_id`, `created_at`, `mother_id`, `updated_at`, `sex`, `last_name`, `age`, `father_id`, `first_name`, `middle_name`, `education`) VALUES(NULL, NULL, '2009-05-20 19:59:07', NULL, '2009-05-20 19:59:07', NULL, NULL, NULL, NULL, 'amit', NULL, NULL)[0m
+  [4;36;1mSQL (13.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mContactDetail Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `contact_details`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mContactDetail Create (1.1ms)[0m   [0mINSERT INTO `contact_details` (`city`, `pincode`, `area`, `business_id`, `steet_address`, `state`) VALUES('mumbai', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mcontact_details_people Columns (0.0ms)[0m   [0mMysql::Error: Table 'ContactsApplication_development.contact_details_people' doesn't exist: SHOW FIELDS FROM `contact_details_people`[0m
