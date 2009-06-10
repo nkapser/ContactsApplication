@@ -1,0 +1,20 @@
+<h1> Login </h1>
+
+<% unless flash[:notice].nil? %>
+  <div id="error_message">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+
+<% form_tag admin_login_path, :method => :post do %>
+  <div id="row">
+    <%= label_tag :username_label , 'User Name'  %>
+    <%= text_field_tag :username %>
+  </div>
+  <div id="row">
+    <%= label_tag :password_label , 'Password'  %>
+    <%= password_field_tag :password %>
+  </div>
+  <%= submit_tag "Submit"%>
+<% end %>

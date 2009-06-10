@@ -13,13 +13,5 @@ describe PeopleController do
     response.should be_success
   end
 
-#  it "should get the person if id is passed" do
-#    person1 = mock(Person)
-#    person2 = mock(Person)
-#
-#    Person.expects()
-#    get :index
-#    assigns[:people]
-#  end
 end
 
