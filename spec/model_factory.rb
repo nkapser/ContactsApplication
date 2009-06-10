@@ -29,5 +29,27 @@ class ModelFactory
 
        ContactDetail.create!(options)
      end
+
+     def create_business(options = {})
+       default_options = {
+        :name => "business",
+        :description => "somedescription",
+        :contact_detail => create_contact_detail(:area => "Pune")
+       }
+
+       options = default_options.merge!(options)
+
+       Business.create!(options)
+     end
+
+     def create_phone_number(options = {})
+       default_options = {
+         :number => 123
+       }
+
+       options = default_options.merge!(options)
+
+       PhoneNumber.create!(options)
+     end
   end
 end
