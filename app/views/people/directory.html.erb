@@ -1,0 +1,11 @@
+Directory Page
+
+<% ('A'..'Z').each do |alphabet|%>
+    <%= link_to alphabet, directory_with_alphabet_path(alphabet) %> | 
+  <% end %>
+
+<% @people.each do |person| %>
+  <div style="padding: 10px; border:1px blue solid;"> <%= person.first_name %> </div>
+<% end %>
+
+  <%= will_paginate @people %>

@@ -3,7 +3,7 @@ class PeopleController < ApplicationController
     
   end
 
-  def show_all
-    @people = People.find :all
+  def directory
+     @people = Person.find_by_first_alphabet(params[:alphabet]).paginate :page => params[:page], :per_page => 20
   end
 end

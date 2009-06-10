@@ -54,6 +54,24 @@ describe Person do
     businesses.should == [business1, business2]
   end
 
+  it "should return all the people if no alphabet is passed"  do
+    people = []
+    ["cc", "bb", "aa"].each do | first_name |
+      people << ModelFactory.create_person(:first_name => first_name)
+    end
 
+    Person.find_by_first_alphabet().should == people.reverse
+
+  end
+
+  it "should return people whose first name starts with alphabet passed"  do
+    people = []
+    ["cc", "bb", "aa"].each do | first_name |
+      people << ModelFactory.create_person(:first_name => first_name)
+    end
+
+    Person.find_by_first_alphabet('a').first.should == people[2]
+
+  end
 end
 

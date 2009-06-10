@@ -33,6 +33,10 @@ class Person < ActiveRecord::Base
            :conditions => {:father_id => self})
   end
 
+  def self.find_by_first_alphabet(alphabet = nil)
+    Person.find(:all, :conditions => "first_name LIKE '#{alphabet}%'", :order => :first_name)
+  end
+
 end
 
 
