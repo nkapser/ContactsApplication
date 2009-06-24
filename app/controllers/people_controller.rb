@@ -8,14 +8,22 @@ class PeopleController < ApplicationController
   end
 
   def search
-    @results = fetch_using_filter(params[:query], params[:filter], params[:page])
+    @results = Person.find_all_by_query_and_filter(params).paginate :page => params[:page], :per_page => 20
   end
 
-  private
-  def fetch_using_filter(query,filter,page)
-    if(filter == "Name")
-      @people = Person.find_all_by_name(query).paginate :page => page, :per_page => 20
-    end
+  def show
+    @person = Person.find_by_id(params[:id])
+    @children = @person.children
+    respond_to do |format|
 
+#      format.html { render :xml => @person.to_xml(:include => {:contact_detail, {:businesses => {:include => [:contact_detail]}}, :father, :mother}, :methods => [:children])}
+       format.html { render :xml => @person.to_xml(:include => { 
+                                    :father => {:except => {:methods => :children}},
+                                    :mother => {:except => {:methods => :children}},
+                                    :businesses => {:include => [:contact_detail]}},
+                                    :contact_detail => {},
+                                    :methods => [:children])}
+     format.json { render :json => @person.to_json }
+    end
   end
 end

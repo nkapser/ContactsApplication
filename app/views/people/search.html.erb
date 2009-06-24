@@ -1,1 +1,6 @@
-  
+
+<% @results.each do |result| %>
+  <div style="padding: 10px; border:1px blue solid;"> <%= link_to result.first_name, person_url(result) %> </div>
+<% end %>
+
+  <%= will_paginate @results %>

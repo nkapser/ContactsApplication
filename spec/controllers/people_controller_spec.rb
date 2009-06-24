@@ -40,7 +40,54 @@ describe PeopleController do
     get :search, :query => 'first_name', :filter => 'Name', :page => 1
     response.should be_success
     assigns[:results].size.should == 20
-  end   
+
+    get :search, :query => 'first_name', :filter => 'Name', :page => 2
+    response.should be_success
+    assigns[:results].size.should == 2
+  end
+
+  it "should get the matching results for the query when filter is Business" do
+    people = []
+    22.times do |index|
+      business = ModelFactory.create_business(:name => "business_#{index}")
+      person = ModelFactory.create_person(:first_name => "first_name_#{index}", :businesses => [business])
+    end
+    22.times do |index|
+      business = ModelFactory.create_business(:name => "other_#{index}")
+      person = ModelFactory.create_person(:first_name => "first_name_#{index}", :businesses => [business])
+    end
+
+    get :search, :query => 'business', :filter => 'Business', :page => 1
+    response.should be_success
+    assigns[:results].size.should == 20
+
+
+    get :search, :query => 'business', :filter => 'Business', :page => 2
+    response.should be_success
+    assigns[:results].size.should == 2
+  end
+
+    it "should get the matching results for the query when filter is Area" do
+    people = []
+    22.times do |index|
+      contact = ModelFactory.create_contact_detail(:area => "area_#{index}")
+      person = ModelFactory.create_person(:first_name => "first_name_#{index}", :contact_detail => contact)
+    end
+    22.times do |index|
+      contact = ModelFactory.create_contact_detail(:area => "other_#{index}")
+      person = ModelFactory.create_person(:first_name => "first_name_#{index}", :contact_detail => contact)
+    end
+
+    get :search, :query => 'area', :filter => 'Area', :page => 1
+    response.should be_success
+    assigns[:results].size.should == 20
+
+
+    get :search, :query => 'area', :filter => 'Area', :page => 2
+    response.should be_success
+    assigns[:results].size.should == 2
+  end
+
 
 end
 
