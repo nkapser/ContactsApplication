@@ -26,8 +26,21 @@ describe PeopleController do
     get :directory, :page => 1
     response.should be_success
     assigns[:people].size.should == 20
-    assigns[:people].should == people[0..19]
   end
+
+  it "should get the matching results for the query when filter is Name" do
+    people = []
+    22.times do |index|
+      people << ModelFactory.create_person(:first_name => "first_name_#{index}")
+    end
+    22.times do |index|
+      people << ModelFactory.create_person(:first_name => "last_name_#{index}")
+    end
+
+    get :search, :query => 'first_name', :filter => 'Name', :page => 1
+    response.should be_success
+    assigns[:results].size.should == 20
+  end   
 
 end
 

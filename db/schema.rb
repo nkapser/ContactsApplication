@@ -38,9 +38,8 @@ ActiveRecord::Schema.define(:version => 20090520194437) do
     t.string   "last_name"
     t.string   "middle_name"
     t.string   "education"
-    t.string   "sex"
+    t.string   "sex",               :limit => 1
     t.date     "dob"
-    t.integer  "age"
     t.integer  "contact_detail_id"
     t.datetime "created_at"
     t.datetime "updated_at"

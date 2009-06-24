@@ -1,3 +1,14 @@
 <div id="searchbox">
-
+<% form_tag search_people_path, :method => :get do %>
+  <div id="row">
+    <%= label_tag :search_label , 'Search'  %>
+    <%= text_field_tag :query %>
+  </div>
+  <div id="row">
+    <%= radio_button_tag "filter", 'Name', true %>Name
+    <%= radio_button_tag "filter", 'Business' %>Business
+    <%= radio_button_tag "filter", 'Area'  %>Area
+  </div>
+  <%= submit_tag "Search"%>
+<% end %>
 </div>

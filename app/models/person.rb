@@ -34,7 +34,21 @@ class Person < ActiveRecord::Base
   end
 
   def self.find_by_first_alphabet(alphabet = nil)
-    Person.find(:all, :conditions => "first_name LIKE '#{alphabet}%'", :order => :first_name)
+    Person.find(:all, {:conditions => "first_name LIKE '#{alphabet}%'", :order => :first_name})
+  end
+
+  def self.find_all_by_query_and_filter(options = [])
+    Person.find(:all, query_conditions(options[:query], options[:filter]))
+  end
+
+  private
+  def query_conditions(query, filter)
+    options = {}
+    case filter
+    when "Name"
+       options[:conditions] = "first_name LIKE '%#{query}%' OR middle_name LIKE '%#{query}'"
+    when "Business"
+    end
   end
 
 end
