@@ -1,0 +1,14 @@
+First Name: <%= f.text_field :first_name %>
+Middle Name: <%= f.text_field :last_name %>
+
+<% fields_for "person[contact_detail_attributes][]", @contact_detail do |cd_form| %>
+  <p>
+    Area: <%= cd_form.text_field :area %>
+    City: <%= cd_form.text_field :city %>
+  </p>
+<% end %>
+
+<div id="businesses">
+<%= render :partial => 'business', :collection => @person.businesses %>
+</div>
+<p><%= add_business_link "Add a business" %></p>

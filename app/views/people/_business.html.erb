@@ -1,0 +1,11 @@
+  <div>
+  <p>
+    Enter Business Details:
+  </p>
+  <% fields_for "person[business_attributes][]", business do |b_form| %>
+    <p>
+      Name: <%= b_form.text_field :name %>
+      Description: <%= b_form.text_field :description %>
+    </p>
+  <% end %>
+  </div>

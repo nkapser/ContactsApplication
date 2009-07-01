@@ -1,0 +1,5 @@
+<h3>Update person details</h3>
+<% form_for :person, :url => person_path(@person), :html => {:method => :put} do |f| %>
+    <%= render :partial => "person_form", :locals =>{:f => f } %>
+  <%= f.submit %>
+<% end %>

@@ -15,15 +15,43 @@ class PeopleController < ApplicationController
     @person = Person.find_by_id(params[:id])
     @children = @person.children
     respond_to do |format|
+      format.html
+      format.xml { render :xml => @person.to_xml(:include => {
+            :father => {:except => {:methods => :children}},
+            :mother => {:except => {:methods => :children}},
+            :businesses => {:include => [:contact_detail]}},
+          :contact_detail => {},
+          :methods => [:children])}
+    end
+  end
 
-#      format.html { render :xml => @person.to_xml(:include => {:contact_detail, {:businesses => {:include => [:contact_detail]}}, :father, :mother}, :methods => [:children])}
-       format.html { render :xml => @person.to_xml(:include => { 
-                                    :father => {:except => {:methods => :children}},
-                                    :mother => {:except => {:methods => :children}},
-                                    :businesses => {:include => [:contact_detail]}},
-                                    :contact_detail => {},
-                                    :methods => [:children])}
-     format.json { render :json => @person.to_json }
+  def new
+    @person = Person.new
+    @contact_detail = ContactDetail.new
+    @person.businesses.build
+  end
+
+  def create
+    @person = Person.new(params[:person])
+    if @person.save
+      flash[:notice] = "Person successfully created"
+      redirect_to :action => :show, :id => @person
+    else
+      render :action => :new
+    end
+  end
+
+  def edit
+    @person = Person.find_by_id(params[:id])
+    @contact_detail = @person.contact_detail
+  end
+
+  def update
+    @person = Person.update(params[:id], params[:person])
+    if @person
+      redirect_to :action => :show, :id => @person
+    else
+      render :action => :edit
     end
   end
 end

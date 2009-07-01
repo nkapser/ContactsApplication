@@ -1,3 +1,5 @@
+<%= link_to "Edit Details", edit_person_path(@person) %>
+
 <fieldset>
   <legend>Person Details</legend>
   <table>
@@ -17,3 +19,30 @@
     </tbody>
   </table>
 </fieldset>
+
+<% unless @person.contact_detail.nil? %>
+  <% @contact_detail = @person.contact_detail %>
+<fieldset>
+  <legend>Contact Details</legend>
+  <table>
+    <thead>
+      <tr>
+        <td>Area</td>
+        <td>City</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @contact_detail.area %></td>
+        <td><%= @contact_detail.city %></td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>
+<% end %>
+
+<% unless @person.businesses.nil? %>
+  <div id="count">
+    Number of Businesses: <%= @person.businesses.size %>
+  </div>
+<% end %>

@@ -1,0 +1,6 @@
+<h3>Add a new person</h3>
+
+<% form_for :person, :url => people_path do |f| %>
+    <%= render :partial => "person_form", :locals =>{:f => f } %>
+  <%= f.submit %>
+<% end %> 
